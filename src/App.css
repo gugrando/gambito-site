@@ -1,0 +1,25 @@
+*{
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: black;
+  height: 100%;
+}
+
+/* Provavelmente precisaremos de uma query aqui apenas para executar isso no mobile, ou mudaremos a img do background desktop(provavel)*/
+@supports not (-webkit-touch-callout: none) {
+  /* Pega Chrome Android (ou outros não-Safari) */
+  .content-all {
+    margin-top:90px !important;
+  }
+  .flecha-a{
+    margin-top: 120px !important;
+  }
+}
+
+@import "tailwindcss";
