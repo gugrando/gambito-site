@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const Home = () => {
   return (
     <motion.section
-      className="flex flex-col w-full h-screen bg-cover md:bg-top bg-center bg-no-repeat bg-[url('./gambito-bg-mobile.jpg')] md:bg-[url('./dsk-bg.png')]"
+      className="flex flex-col w-full h-screen bg-cover md:bg-top bg-center bg-no-repeat bg-[url('/gambito-bg-mobile.jpg')] md:bg-[url('/dsk-bg.png')]"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 md:bg-black/60"></div>
@@ -14,7 +14,7 @@ const Home = () => {
       >
         <motion.img
           className="w-3/4 max-w-md"
-          src="./gambito-logo.png"
+          src="/gambito-logo.png"
           alt="Gambito Logo"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -67,14 +67,14 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.2}}
         >
           <p className="flex items-center gap-2 text-neutral-400 drop-shadow-black drop-shadow-lg  text-xs mt-3 underline">
-            <img className="w-5" src="./spotify.png" alt="" />Playlist da Gambito no Spotify
+            <img className="w-5" src="/spotify.png" alt="" />Playlist da Gambito no Spotify
           </p>
         </motion.a>
 
         <motion.div>
           <img
             className="mt-40 w-11 animate-bounce flecha-a"
-            src="./flecha.png"
+            src="/flecha.png"
             alt=""
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
