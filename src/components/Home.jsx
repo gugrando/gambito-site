@@ -3,14 +3,14 @@ import { motion } from "framer-motion"
 const Home = () => {
   return (
     <motion.section
-      className="flex flex-col w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('./src/assets/gambito-bg-mobile.jpg')] md:bg-[url('./src/assets/dsk-bg.png')]"
+      className="flex flex-col w-full h-screen bg-cover md:bg-top bg-center bg-no-repeat bg-[url('./src/assets/gambito-bg-mobile.jpg')] md:bg-[url('./src/assets/dsk-bg.png')]"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 md:bg-black/60"></div>
 
       {/* Conteúdo */}
       <motion.div
-        className="mt-32 w-full h-dvh flex flex-col items-center z-10 content-all"
+        className="mt-32  w-full h-dvh flex flex-col items-center z-10 content-all"
       >
         <motion.img
           className="w-3/4 max-w-md"

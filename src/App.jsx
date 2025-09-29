@@ -2,6 +2,7 @@ import './App.css'
 import Home from './components/Home'
 import Speakeasy from './components/Speakyeasy'
 import Food from './components/Food'
+import Rules from './components/Rules'
 
 import Footer from './components/Footer'
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Home />
         <Speakeasy />
         <Food />
+        <Rules />
         <Footer />
       </main>
     </>
