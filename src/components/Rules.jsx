@@ -81,7 +81,7 @@ const RuleItem = ({ title, description, piece, delay, index, setActiveIndex }) =
       {/* Ícone */}
       <motion.div className="flex-shrink-0">
         <motion.img
-          src={`./src/assets/${piece}`}
+          src={`/${piece}`}
           alt={piece}
           className="w-16 h-16 object-contain select-none"
           initial={{ opacity: 0, scale: 0.6, x: -30 }}
@@ -106,7 +106,7 @@ const Rules = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <motion.section className="z-40 w-full h-full bg-cover bg-[url('./src/assets/backhouse.jpg')] bg-center flex flex-col justify-center items-center gap-8 pt-[6rem] px-3 py-4">
+    <motion.section className="z-40 w-full h-full bg-cover bg-[url('/backhouse.jpg')] bg-center flex flex-col justify-center items-center gap-8 pt-[6rem] px-3 py-4">
       <div className="max-w-3xl mx-auto flex flex-col gap-4 bg-[#153831]/70 backdrop-blur-xl shadow-[1px_0px_10px_1px_rgba(0,0,0,0.1)] shadow-green-900/70 rounded-2xl pb-8">
           
           {/* Título dinâmico */}
@@ -115,7 +115,7 @@ const Rules = () => {
                 <motion.img
                 whileInView={{ opacity: 1 }}
                 key={activeIndex}
-                src={`./src/assets/${pieces[activeIndex]}`}
+                src={`/${pieces[activeIndex]}`}
                 alt="piece"
                 className="w-40 h-40 object-contain select-none"
                 initial={{ opacity: 0, scale: 0.7, rotate: -15 }}

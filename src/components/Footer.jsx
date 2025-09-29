@@ -16,15 +16,15 @@ const Footer = () => {
                             Reserva
                     </motion.button>
         </motion.div>
-        <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} className="mt-[-4rem] w-full md:w-1/2 lg:w-[30%]" src="./src/assets/entrada.png"/>
+        <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} className="mt-[-4rem] w-full md:w-1/2 lg:w-[30%]" src="/entrada.png"/>
         <div className="absolute bottom-1/4 w-full h-fit flex items-center justify-center">
             <motion.a href="#top">
-                <motion.img className="animate-bounce w-[42px] rotate-180" src="./src/assets/flecha.png" alt="Top icon" />
+                <motion.img className="animate-bounce w-[42px] rotate-180" src="/flecha.png" alt="Top icon" />
             </motion.a>
         </div>
         <motion.div className="text-start w-full h-fit flex flex-col-reverse lg:flex-row lg:justify-center lg:p-8 lg:gap-40 mt-4 items-center">
             {/* Logo Desktop */}
-            <motion.img className="hidden lg:inline w-[200px] max-w-md" src="./src/assets/gambito-logo-t.png" alt="Gambito Logo" />
+            <motion.img className="hidden lg:inline w-[200px] max-w-md" src="/gambito-logo-t.png" alt="Gambito Logo" />
             {/* Copyright */}
             <motion.div className="flex flex-col items-center w-fit py-6 lg:py-0">
                     <motion.span className="lg:hidden w-[90%] h-px bg-neutral-800 mb-4"></motion.span>
@@ -46,16 +46,16 @@ const Footer = () => {
             {/* Social */}
                 <motion.div className="lg:w-fit w-full h-fit flex justify-center gap-4">
                     <motion.a target="_blank" href="https://www.instagram.com/gambitobar/">
-                        <motion.img className="w-8" src="./src/assets/instagram.png" />
+                        <motion.img className="w-8" src="/instagram.png" />
                     </motion.a>
                     <motion.a target="_blank" href="https://www.facebook.com/gambitobar/">
-                        <motion.img className="w-8" src="./src/assets/facebook.png" />
+                        <motion.img className="w-8" src="/facebook.png" />
                     </motion.a>
                     <motion.a target="_blank" href="https://www.facebook.com/gambitobar/">
-                        <motion.img className="w-8" src="./src/assets/zap.png" />
+                        <motion.img className="w-8" src="/zap.png" />
                     </motion.a>
                     <motion.a target="_blank" href="https://open.spotify.com/playlist/3WPNErCj8ei7t4qQvX5QTz?si=Y77rLzUOQRG5MA6TZKF2yQ&pi=u-7UJm2wMbTVSb&nd=1&dlsi=98c21ccefdcb477a">
-                        <motion.img className="w-8" src="./src/assets/logotipo-spotify.png" />
+                        <motion.img className="w-8" src="/logotipo-spotify.png" />
                     </motion.a>
                 </motion.div>
         </motion.div>

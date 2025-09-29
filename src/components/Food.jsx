@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform, useMotionValueEvent, useAnimation, Ani
 import { useRef, useState } from "react";
 
 const Images = [
-    {id: 'taca', src: './src/assets/taca-new2.png'},
-    {id: 'local', src: './src/assets/local.jpg'},
+    {id: 'taca', src: '/taca-new2.png'},
+    {id: 'local', src: '/local.jpg'},
 ]
 
 
@@ -33,7 +33,7 @@ const Food = () => {
     
     return (
         <motion.section style={{opacity: Opacity2}} ref={ref} className="w-full h-fit overflow-x-clip  bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative z-50">
-            <div  className="w-full h-full bg-[url('./src/assets/loc.jpg')] bg-cover bg-center bg-no-repeat absolute z-[-1] opacity-30"></div>
+            <div  className="w-full h-full bg-[url('/loc.jpg')] bg-cover bg-center bg-no-repeat absolute z-[-1] opacity-30"></div>
             {/* <motion.div style={{scale: scaleX, opacity: Opacity }} className="text-center w-full h-full flex flex-col items-center justify-center mt-16">
                 <motion.h1 
                     initial={{ opacity: 0, y: 30 }} 
@@ -65,7 +65,7 @@ const Food = () => {
                     alt="" 
                     style={{scale: scaleX}}
                 />
-                <motion.img initial={{ opacity: 0, y: -90 }} whileInView={{ opacity: 1, y: 0 }} className="animate-bounce z-50 absolute top-[90%] w-[48px]" src="./src/assets/flecha.png" alt="" />
+                <motion.img initial={{ opacity: 0, y: -90 }} whileInView={{ opacity: 1, y: 0 }} className="animate-bounce z-50 absolute top-[90%] w-[48px]" src="/flecha.png" alt="" />
             </motion.div> */}
 
             {/* Comidas */}
@@ -87,11 +87,11 @@ const Food = () => {
                     </motion.button>
                 </motion.div>
                 <motion.div className="w-full h-fit flex justify-between mt-12">
-                    <motion.img style={{ x: X1 }} className="w-[45%] lg:w-[30%] h-auto object-contain" src="./src/assets/burrata.png" alt="" />
-                    <motion.img style={{ x: X2 }} className="w-[40%] lg:w-[25%] h-auto object-contain" src="./src/assets/coxinha.png" alt="" />
+                    <motion.img style={{ x: X1 }} className="w-[45%] lg:w-[30%] h-auto object-contain" src="/burrata.png" alt="" />
+                    <motion.img style={{ x: X2 }} className="w-[40%] lg:w-[25%] h-auto object-contain" src="/coxinha.png" alt="" />
                 </motion.div>
                 <motion.div style={{opacity: Opacity2 }} className="relative w-full h-full flex flex-col items-center justify-center">
-                    <motion.img transition={{ duration: 1, delay: .5 }} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} className="mt-[-20%] w-[100%] lg:w-[40%]" src={innerWidth < 768 ? `./src/assets/Phone2.png` : `./src/assets/Phone3.png`} alt=""></motion.img>
+                    <motion.img transition={{ duration: 1, delay: .5 }} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} className="mt-[-20%] w-[100%] lg:w-[40%]" src={innerWidth < 768 ? `/Phone2.png` : `/Phone3.png`} alt=""></motion.img>
                     <motion.div className="absolute top-2/3 flex flex-col items-center">
                         <motion.h1 transition={{ duration: 1 }} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} className="text-center text-3xl text-white ">
                             Levamos a experiência até você
