@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform, useMotionValueEvent, useAnimation, AnimatePresence } from "framer-motion"
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom"
 
 const Speakeasy = () => {
     const ref = useRef(null);
@@ -34,10 +35,10 @@ const Speakeasy = () => {
     const DrinkPos = useTransform(scrollYProgress, [0, 0.03, 0.08], ["-20%", "-20%", "23%"])
 
     const Images = [
+        { id: "img4", src: "/Negroni.png", title: "Negroni", description: "O lendário clássico, especialidade da casa" },
         { id: "img1", src: "/rabo-de-galo.png", title: "Rabo de Galo", description: "Clássico Brasileiro, uma viagem sensorial" },
-        { id: "img2", src: "/Drink3-Cut.png", title: "Penicillin Clarified", description: "Uma versão clarificada desse neoclássico" },
-        { id: "img3", src: "/Abbraccio.png", title: "Abbraccio", description: "Forte como um abraço deve ser" },
-        { id: "img4", src: "/Negroni.png", title: "Negroni", description: "O lendário clássico Italiano" },
+        { id: "img2", src: "/esfumato.png", title: "Sfumato", description: "Releitura floral do martini" },
+        { id: "img3", src: "/drink1.png", title: "Penicillin Clarified", description: "Uma versão clarificada desse neoclássico" },
         { id: "img5", src: "/Drink5-Cut.png", title: "Golden Bloom", description: "Coquetel autoral no perfil spritz" },
     ]
 
@@ -99,14 +100,14 @@ const Speakeasy = () => {
                                 <motion.div
                                     key={Images[activeIndex].id + "-info"}
                                     variants={{
-                                        enter: { opacity: 0, x: 60 },
+                                        enter: { opacity: 0, x: 0 },
                                         center: { opacity: 1, x: 0 },
-                                        exit: { opacity: 0, x: -60 },
+                                        exit: { opacity: 0, x: 0 },
                                     }}
                                     initial="enter"
                                     animate="center"
                                     exit="exit"
-                                    transition={{ duration: 0.2, ease: "easeInOut" }}
+                                    transition={{ duration: 0.3, ease: "easeInOut" }}
                                 >
                                     <motion.h1 className="text-white text-3xl">
                                         {Images[activeIndex].title}
@@ -116,12 +117,14 @@ const Speakeasy = () => {
                                     </motion.p>
                                 </motion.div>
                             </AnimatePresence>
-                            <motion.button
-                                whileHover={{ scale: 1.03 }}
-                                className="w-[260px] text-white px-22 py-[.75rem] mt-4 z-50 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
-                            >
-                                Drinks
-                            </motion.button>
+                            <Link to="/menu" state={{type: "drinks"}}>
+                                <motion.button
+                                    whileHover={{ scale: 1.03 }}
+                                    className="w-[260px] text-white px-22 py-[.75rem] mt-4 z-50 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
+                                >
+                                    Drinks
+                                </motion.button>
+                            </Link>
                         </motion.div>
                     
                     
@@ -145,16 +148,15 @@ const Speakeasy = () => {
                         initial="enter"
                         animate="center"
                         exit="exit"
-                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                        transition={{ duration: 0.26, ease: "easeInOut" }}
                         />
                     </AnimatePresence>
                     </motion.div>
-
-
                     <motion.div style={{y: MesaPos}} className="z-0 flex flex-col items-center justify-center w-full h-fit ">
                         <motion.img className="w-[70%] sm:w-[40%] lg:w-[25%] xl:w-[20%]" src="/mesa.png" alt="" />
                     </motion.div>
                 </motion.div>
+                
             </motion.div>
             {/* <div className="w-full h-[1000px] bg-green-900">.</div> */}
         </motion.div>

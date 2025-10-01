@@ -107,7 +107,7 @@ const Rules = () => {
 
   return (
     <motion.section className="z-40 w-full h-full bg-cover bg-[url('/backhouse.jpg')] bg-center flex flex-col justify-center items-center gap-8 pt-[6rem] px-3 py-4">
-      <div className="max-w-3xl mx-auto flex flex-col gap-4 bg-[#153831]/70 backdrop-blur-xl shadow-[1px_0px_10px_1px_rgba(0,0,0,0.1)] shadow-green-900/70 rounded-2xl pb-8">
+      <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 1, ease: "easeIn" }} className="max-w-3xl mx-auto flex flex-col gap-4 bg-[#153831]/70 backdrop-blur-xl shadow-[1px_0px_10px_1px_rgba(0,0,0,0.1)] shadow-green-900/70 rounded-2xl pb-8">
           
           {/* Título dinâmico */}
           <motion.div className="w-full h-fit flex flex-col justify-center items-center">
@@ -126,17 +126,17 @@ const Rules = () => {
             </AnimatePresence>
             <motion.h1 
                 className="text-3xl font-bold text-white"
-                transition={{ duration: 1 }} 
-                initial={{ opacity: 0, y: 30 }} 
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2 }} 
             >
                 
                     Regras da Casa
             </motion.h1>
             <motion.p
-                transition={{ duration: 1 }} 
-                initial={{ opacity: 0, y: 30 }} 
-                whileInView={{ opacity: 1, y: 0 }} 
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 0.7 }}
                 className="text-neutral-300 mb-10 text-center"
             >
                 Comportamento exigido ao cliente que usufrua dos nossos serviços
@@ -160,7 +160,7 @@ const Rules = () => {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

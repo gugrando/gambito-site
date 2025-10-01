@@ -11,6 +11,33 @@ body{
   height: 100%;
 }
 
+
+/* Scrolbar */
+/* Barra de scroll padrão */
+::-webkit-scrollbar {
+  width: 8px;              /* largura da barra */
+  height: 8px;             /* altura em scroll horizontal */
+}
+
+/* Trilha (fundo da barra) */
+::-webkit-scrollbar-track {
+  background: #0a0a0a;     /* cor do fundo */
+}
+
+/* Polegar (a parte que arrasta) */
+::-webkit-scrollbar-thumb {
+  background: #f4b400;     /* cor principal */
+  border-radius: 9999px;   /* deixa arredondado */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: auto;              /* "auto" ou "thin" */
+  scrollbar-color: #f4b400 #0a0a0a;   /* thumb | track */
+}
+
+
+
 /* Provavelmente precisaremos de uma query aqui apenas para executar isso no mobile, ou mudaremos a img do background desktop(provavel)*/
 @supports not (-webkit-touch-callout: none) {
   /* Pega Chrome Android (ou outros não-Safari) */

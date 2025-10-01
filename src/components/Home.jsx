@@ -1,4 +1,6 @@
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
+
 
 const Home = () => {
   return (
@@ -36,32 +38,35 @@ const Home = () => {
         animate={{ opacity: 1, y: 0}}
         transition={{ duration: 0.5, delay: 0.02 }}
         >
-        
+        <a target="_blank" href="https://www.getinapp.com.br/farroupilha/gambito-bar">
             <motion.button
             whileHover={{ scale: 1.03 }}
-            className="w-[260px] text-white px-22 py-[.75rem] mt-8 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
+            className="hover:cursor-pointer w-[260px] text-white px-22 py-[.75rem] mt-8 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
             >
             Reserva
             </motion.button>
-
+        </a>
+        <a target="_blank" href="https://gambitobar.goomer.app/">
             <motion.button
             whileHover={{ scale: 1.03 }}
-            className="w-[260px] text-white px-22 py-[.75rem] mt-4 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
+            className="hover:cursor-pointer w-[260px] text-white px-22 py-[.75rem] mt-4 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
             
             >
             Delivery
             </motion.button>
-
+        </a>
+        <Link to="/menu">
             <motion.button
             whileHover={{ scale: 1.03 }}
-            className="w-[260px] text-white px-22 py-[.75rem] mt-4 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
+            className="hover:cursor-pointer w-[260px] text-white px-22 py-[.75rem] mt-4 bg-yellow-500/5 hover:bg-amber-500/60 border border-yellow-500 rounded-full shadow-lg transition-all ease-in"
         
             >
             Menu
             </motion.button>
+        </Link>
         </motion.div>
 
-        <motion.a href="" target="_blank"
+        <motion.a href="https://open.spotify.com/playlist/3WPNErCj8ei7t4qQvX5QTz?si=Y77rLzUOQRG5MA6TZKF2yQ&pi=u-7UJm2wMbTVSb&nd=1&dlsi=63a0099250ce464b" target="_blank"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2}}
