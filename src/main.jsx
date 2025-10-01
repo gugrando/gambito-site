@@ -1,23 +1,34 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 // import das paginas
 import Menu from "./components/Menu";
-import Footer from './components/Footer.jsx';
+import Footer from "./components/Footer.jsx";
+import LinkTree from "./components/LinkTreeX.js";
 
+// 🔹 Criar um wrapper para controlar o Footer
+function Layout() {
+  const location = useLocation();
 
-createRoot(document.getElementById('root')).render(
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/links" element={<LinkTree />} />
+      </Routes>
+
+      {/* Só renderiza o Footer se NÃO for a rota /links */}
+      {location.pathname !== "/links" && <Footer />}
+    </>
+  );
+}
+
+createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/menu" state={{type: "comidas"}} element={<Menu />} />
-      <Route path="/menu" state={{type: "drinks"}} element={<Menu />} />
-    </Routes>
-    <Footer />
+    <Layout />
   </BrowserRouter>
-)
+);
