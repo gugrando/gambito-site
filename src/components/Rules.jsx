@@ -51,15 +51,15 @@ const rules = [
 ];
 
 const pieces = [
-  "Torre.png",
-  "Cavalo.png",
-  "Bispo.png",
-  "Rainha.png",
-  "Peao.png",
-  "Rei.png",
-  "Bispo.png",
-  "Cavalo.png",
-  "Torre.png",
+  "Torre.webp",
+  "Cavalo.webp",
+  "Bispo.webp",
+  "Rainha.webp",
+  "Peao.webp",
+  "Rei.webp",
+  "Bispo.webp",
+  "Cavalo.webp",
+  "Torre.webp",
 ];
 
 const RuleItem = ({ title, description, piece, delay, index, setActiveIndex }) => {

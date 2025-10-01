@@ -35,11 +35,11 @@ const Speakeasy = () => {
     const DrinkPos = useTransform(scrollYProgress, [0, 0.03, 0.08], ["-20%", "-20%", "23%"])
 
     const Images = [
-        { id: "img4", src: "/Negroni.png", title: "Negroni", description: "O lendário clássico, especialidade da casa" },
-        { id: "img1", src: "/rabo-de-galo.png", title: "Rabo de Galo", description: "Clássico Brasileiro, uma viagem sensorial" },
-        { id: "img2", src: "/esfumato.png", title: "Sfumato", description: "Releitura floral do martini" },
-        { id: "img3", src: "/drink1.png", title: "Penicillin Clarified", description: "Uma versão clarificada desse neoclássico" },
-        { id: "img5", src: "/Drink5-Cut.png", title: "Golden Bloom", description: "Coquetel autoral no perfil spritz" },
+        { id: "img4", src: "/Negroni.webp", title: "Negroni", description: "O lendário clássico, especialidade da casa" },
+        { id: "img1", src: "/rabo-de-galo.webp", title: "Rabo de Galo", description: "Clássico Brasileiro, uma viagem sensorial" },
+        { id: "img2", src: "/esfumato.webp", title: "Sfumato", description: "Releitura floral de martini" },
+        { id: "img3", src: "/drink1.webp", title: "Penicillin Clarified", description: "Uma versão clarificada desse neoclássico" },
+        { id: "img5", src: "/Drink5-Cut.webp", title: "Golden Bloom", description: "Coquetel autoral no perfil spritz" },
     ]
 
     const [activeIndex, setActiveIndex] = useState(0)
@@ -58,7 +58,7 @@ const Speakeasy = () => {
     // )
 
     return ( 
-        <motion.div style={{opacity: Opacity}} className="relative bg-contain bg-cover-center bg-[url('/FundoGambito.png')]">
+        <motion.div style={{opacity: Opacity}} className="relative bg-contain bg-cover-center bg-[url('/FundoGambito.webp')]">
             {/* BG */}
             <div className="absolute inset-0 bg-black/60 backdrop-opacity-95 backdrop-blur-[1px]"></div>
 
@@ -153,7 +153,7 @@ const Speakeasy = () => {
                     </AnimatePresence>
                     </motion.div>
                     <motion.div style={{y: MesaPos}} className="z-0 flex flex-col items-center justify-center w-full h-fit ">
-                        <motion.img className="w-[70%] sm:w-[40%] lg:w-[25%] xl:w-[20%]" src="/mesa.png" alt="" />
+                        <motion.img className="w-[70%] sm:w-[40%] lg:w-[25%] xl:w-[20%]" src="/mesa.webp" alt="" />
                     </motion.div>
                 </motion.div>
                 

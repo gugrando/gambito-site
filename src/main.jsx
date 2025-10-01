@@ -7,7 +7,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import das paginas
-import Drinks from "./components/Drinks";
 import Menu from "./components/Menu";
 import Footer from './components/Footer.jsx';
 
@@ -16,7 +15,6 @@ createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/drinks" element={<Drinks />} />
       <Route path="/menu" state={{type: "comidas"}} element={<Menu />} />
       <Route path="/menu" state={{type: "drinks"}} element={<Menu />} />
     </Routes>

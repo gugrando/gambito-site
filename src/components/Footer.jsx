@@ -38,16 +38,16 @@ const Footer = () => {
                     </a>
         </motion.div>
         {/* Aqui muda o tamanho aritificalmente mas muda... */}
-        <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} className="mt-[-9rem] w-full md:w-1/2 lg:w-[30%]" src="/entrada.png"/>
+        <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} className="mt-[-9rem] w-full md:w-1/2 lg:w-[30%]" src="/entrada.webp"/>
         
         <div className="absolute bottom-[25%] w-full h-fit flex flex-col items-center justify-center">
             <motion.a initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ duration: 1 }} href="#top">
-                <motion.img className="animate-bounce w-[42px] rotate-180" src="/flecha.png" alt="Top icon" />
+                <motion.img className="animate-bounce w-[42px] rotate-180" src="/flecha.webp" alt="Top icon" />
             </motion.a>
         </div>
         <motion.div className="text-start w-full h-fit flex flex-col-reverse lg:flex-row lg:justify-center lg:p-8 lg:gap-40 mt-4 items-center">
             {/* Logo Desktop */}
-            <motion.img className="hidden lg:inline w-[200px] max-w-md" src="/gambito-logo-t.png" alt="Gambito Logo" />
+            <motion.img className="hidden lg:inline w-[200px] max-w-md" src="/gambito-logo-t.webp" alt="Gambito Logo" />
             {/* Copyright */}
             <motion.div className="flex flex-col items-center w-fit py-6 lg:py-0">
                     <motion.span className="lg:hidden w-[90%] h-px bg-neutral-800 mb-4"></motion.span>
@@ -71,16 +71,16 @@ const Footer = () => {
             {/* Social */}
                 <motion.div className="lg:w-fit w-full h-fit flex justify-center gap-4">
                     <motion.a initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.1 }} target="_blank" href="https://www.instagram.com/gambitobar/">
-                        <motion.img className="w-8" src="/instagram.png" />
+                        <motion.img className="w-8" src="/instagram.webp" />
                     </motion.a>
                     <motion.a initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} target="_blank" href="https://www.facebook.com/gambitobar/">
-                        <motion.img className="w-8" src="/facebook.png" />
+                        <motion.img className="w-8" src="/facebook.webp" />
                     </motion.a>
                     <motion.a initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }} target="_blank" href="https://api.whatsapp.com/send?phone=5554996153535">
-                        <motion.img className="w-8" src="/zap.png" />
+                        <motion.img className="w-8" src="/zap.webp" />
                     </motion.a>
                     <motion.a initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.4 }} target="_blank" href="https://open.spotify.com/playlist/3WPNErCj8ei7t4qQvX5QTz?si=Y77rLzUOQRG5MA6TZKF2yQ&pi=u-7UJm2wMbTVSb&nd=1&dlsi=98c21ccefdcb477a">
-                        <motion.img className="w-8" src="/logotipo-spotify.png" />
+                        <motion.img className="w-8" src="/logotipo-spotify.webp" />
                     </motion.a>
                 </motion.div>
         </motion.div>

@@ -3,8 +3,8 @@ import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Images = [
-    {id: 'taca', src: '/taca-new2.png'},
-    {id: 'local', src: '/local.jpg'},
+    {id: 'taca', src: '/taca-new2.webp'},
+    {id: 'local', src: '/local.webp'},
 ]
 
 
@@ -33,9 +33,9 @@ const Food = () => {
     
     return (
         <motion.section style={{opacity: Opacity2}} ref={ref} className="w-full h-fit overflow-x-clip  bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center relative z-50">
-            <div  className="w-full h-full bg-[url('/loc.jpg')] bg-cover bg-center bg-no-repeat absolute z-[-1] opacity-20"></div>
+            <div  className="w-full h-full bg-[url('/loc.webp')] bg-cover bg-center bg-no-repeat absolute z-[-1] opacity-20"></div>
             {/* Comidas */}
-            <motion.div ref={ref2} className="w-full h-fit mt-20">
+            <motion.div ref={ref2} className="w-full h-fit mt-10">
                 <motion.h1 transition={{ duration: 2 }} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} className="text-center text-3xl text-white ">
                    Uma experiência gastronomica
                 </motion.h1>
@@ -59,11 +59,11 @@ const Food = () => {
                     </Link>
                 </motion.div>
                 <motion.div className="w-full h-fit flex justify-between mt-22">
-                    <motion.img style={{ x: X1 }} className="w-[45%] lg:w-[30%] h-auto object-contain" src="/burrata.png" alt="" />
-                    <motion.img style={{ x: X2 }} className="w-[40%] lg:w-[25%] h-auto object-contain" src="/coxinha.png" alt="" />
+                    <motion.img style={{ x: X1 }} className="w-[45%] lg:w-[30%] h-auto object-contain" src="/burrata.webp" alt="" />
+                    <motion.img style={{ x: X2 }} className="w-[40%] lg:w-[25%] h-auto object-contain" src="/coxinha.webp" alt="" />
                 </motion.div>
                 <motion.div style={{opacity: Opacity2 }} className="relative w-full h-full flex flex-col items-center justify-center">
-                    <motion.img transition={{ duration: 2, delay: 1 }} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} className="mt-[-20%] w-[100%] lg:w-[40%]" src={innerWidth < 768 ? `/Phone2.png` : `/Phone3.png`} alt=""></motion.img>
+                    <motion.img transition={{ duration: 2, delay: 1 }} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} className="mt-[-20%] w-[100%] lg:w-[40%]" src={innerWidth < 768 ? `/Phone2.webp` : `/Phone3.webp`} alt=""></motion.img>
                     <motion.div className="absolute top-2/3 flex flex-col items-center">
                         <motion.h1 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
