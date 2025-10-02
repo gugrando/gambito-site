@@ -261,7 +261,7 @@ const Menu = () => {
         {/* Conteúdo dinâmico */}
         <motion.div className="relative flex flex-col items-center w-full h-full mt-10">
           {/* Bloco fixo para título + subtítulo */}
-          <div className="flex flex-col items-center justify-center h-[10rem] md:h-[12rem] text-center">
+          <div className="flex flex-col items-center justify-center h-[10rem] md:h-[12rem] text-center mb-5">
             <motion.h1
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
