@@ -7,7 +7,7 @@ const LinkTree: React.FC = () => {
   };
 
   return (
-    <motion.div className="h-fit bg-gradient-to-t from-[#102A13] from-10% to-[#fcfffd] to-50% flex flex-col items-center justify-center text-white">
+    <motion.div className="h-fit bg-gradient-to-t from-[#102A13] from-10% to-[#fcfffd] to-50% flex flex-col items-center justify-center text-white overflow-clip">
   
       {/* Banner */}
       <motion.div className="bg-[#041823] h-[23rem] min-w-full flex flex-col items-center justify-center rounded-b-4xl">
@@ -181,7 +181,7 @@ const LinkTree: React.FC = () => {
             {/* Lado direito */}
             <motion.div className="w-4/5 flex flex-col items-center justify-center text-center">
               <motion.dd className="text-[30px] md:text-[50px]">WhatsApp</motion.dd>
-              <motion.p className="text-xs md:text-[15px] text-gray-300">Peça já pelo app</motion.p>
+              <motion.p className="text-xs md:text-[15px] text-gray-300">Tire suas dúvidas</motion.p>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -197,7 +197,7 @@ const LinkTree: React.FC = () => {
           {/* Imagem absoluta, continua fora do fluxo */}
           <motion.img
             src="/spotify.png"
-            alt="Delivery"
+            alt="Spotify"
             className="w-12 h-12 md:w-10 md:h-10 drop-shadow-lg absolute -bottom-5 left-2"
           />
 
@@ -206,7 +206,7 @@ const LinkTree: React.FC = () => {
             {/* Lado direito original agora é o esquerdo */}
             <motion.div className="w-4/5 flex flex-col items-center justify-center text-center">
               <motion.dd className="text-[30px] md:text-[50px]">Playlist</motion.dd>
-              <motion.p className="text-xs md:text-[15px] text-gray-300">Peça já pelo app</motion.p>
+              <motion.p className="text-xs md:text-[15px] text-gray-300">Escute nossa playlist</motion.p>
             </motion.div>
 
             {/* Lado esquerdo original agora é o direito */}
