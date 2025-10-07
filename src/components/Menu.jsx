@@ -12,7 +12,7 @@ const foodSections = [
       { name: "Agnolini", price: "R$ 49", image: "/menu/agnolini.webp", description: "Massa artesanal recheada, saborosa e delicada." },
       { name: "Guiozas", price: "R$ 49", image: "/menu/guioza.webp", description: "Pastéis orientais recheados e selados na chapa." },
       { name: "Dadinho de Tapioca", price: "R$ 49", image: "/menu/dadinho.webp", description: "Croquetes de tapioca com queijo, crocantes e leves." },
-      { name: "Burrata", price: "R$ 54", image: "/menu/burrata.webp", description: "Creme de queijo fresco com azeite e temperos." },
+      { name: "Burrata", price: "R$ 54", image: "/menu/burrata.webp", description: "Creme de Burrata e tomates confitados, acompanhados de molho pesto e pão de fermentação natural" },
       { name: "Camarão à Milanesa", price: "R$ 76", image: "/menu/camarao.webp", description: "Camarões empanados, crocantes e suculentos." },
     ],
   },
