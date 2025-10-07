@@ -62,7 +62,7 @@ const Speakeasy = () => {
             {/* BG */}
             <div className="absolute inset-0 bg-black/60 backdrop-opacity-95 backdrop-blur-[1px]"></div>
 
-            <motion.div className="flex flex-col w-full h-[450rem] mt-[-2rem] lg:mt-8 2xl:mt-[-2rem]" ref={ref}  >
+            <motion.div className="flex flex-col w-full h-[450rem] mt-20  2xl:mt-[-2rem]" ref={ref}  >
                 <motion.div className="relative flex flex-col justify-center w-full h-screen top-0" style={{position: DrinkContainerPos}}>
                     <motion.div style={{opacity: InfosOpac}} className="z-50 flex flex-col items-center mt-6">
                         <motion.h1 

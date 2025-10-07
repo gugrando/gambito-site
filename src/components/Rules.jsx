@@ -106,7 +106,7 @@ const Rules = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <motion.section className="z-40 w-full h-full bg-cover bg-[url('/backhouse.jpg')] bg-center flex flex-col justify-center items-center gap-8 pt-[6rem] px-3 py-4">
+    <motion.section className="z-40 w-full h-full bg-cover bg-[url('/backhouse.jpg')] bg-center flex flex-col justify-center items-center gap-8 px-3 py-4">
       <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 1, ease: "easeIn" }} className="max-w-3xl mx-auto flex flex-col gap-4 bg-[#153831]/70 backdrop-blur-xl shadow-[1px_0px_10px_1px_rgba(0,0,0,0.1)] shadow-green-900/70 rounded-2xl pb-8">
           
           {/* Título dinâmico */}
