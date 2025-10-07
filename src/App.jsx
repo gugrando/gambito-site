@@ -10,10 +10,10 @@ function App() {
     <>
       <main className="w-full min-h-screen">
         <Home />
+        <Rules />
         <Speakeasy />
         <Queen />
         <Food />
-        <Rules />
         {/* <Footer /> */}
       </main>
     </>
