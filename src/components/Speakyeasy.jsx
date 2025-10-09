@@ -24,15 +24,15 @@ const Speakeasy = () => {
     // 🔹 controls para animar o bloco "drinks e mesa fixa"
     const drinksControls = useAnimation();
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
-        if (latest > 0.079) {
+        if (latest > 0.09) {
             drinksControls.start("visible");
         } else {
             drinksControls.start("hidden");
         }
     });
-    const InfosOpac = useTransform(scrollYProgress, [0, 0.07, 0.08], [1, 1, 0])
-    const MesaPos = useTransform(scrollYProgress, [0, 0.08], ["230%", "-10%"])
-    const DrinkPos = useTransform(scrollYProgress, [0, 0.03, 0.08], ["-20%", "-20%", "23%"])
+    const InfosOpac = useTransform(scrollYProgress, [0, 0.07, 0.09], [1, 1, 0])
+    const MesaPos = useTransform(scrollYProgress, [0, 0.09], ["230%", "-10%"])
+    const DrinkPos = useTransform(scrollYProgress, [0, 0.04, 0.09], ["-20%", "-20%", "23%"])
 
     const Images = [
         { id: "img4", src: "/Negroni.webp", title: "Negroni", description: "O lendário clássico, especialidade da casa" },

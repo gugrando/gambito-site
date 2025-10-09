@@ -49,7 +49,7 @@ const Footer = () => {
             {/* Logo Desktop */}
             <motion.img className="hidden lg:inline w-[200px] max-w-md" src="/gambito-logo-t.webp" alt="Gambito Logo" />
             {/* Copyright */}
-            <motion.div className="flex flex-col items-center w-fit py-6 lg:py-0">
+            <motion.div className="flex flex-col items-center w-fit py-6 lg:py-0 bg-[black]">
                     <motion.span className="lg:hidden w-[90%] h-px bg-neutral-800 mb-4"></motion.span>
                     <motion.a target="_blank" href="https://maps.app.goo.gl/VABN2sh3hxQ5rknF8">
                         <p className="text-white text-center px-2 text-[14.5px] underline">Rua Stefano Crippa, 196, Bela Vista, Farroupilha-RS</p>
@@ -69,7 +69,7 @@ const Footer = () => {
                 </motion.p>
             </motion.div>
             {/* Social */}
-                <motion.div className="lg:w-fit w-full h-fit flex justify-center gap-4">
+                <motion.div className="lg:w-fit w-full h-fit flex justify-center gap-4 bg-black">
                     <motion.a initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.1 }} target="_blank" href="https://www.instagram.com/gambitobar/">
                         <motion.img className="w-8" src="/instagram.webp" />
                     </motion.a>

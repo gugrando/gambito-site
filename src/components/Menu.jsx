@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Carousel from "./Carousel";
+import DrinksHero from "./DrinksHero";
+import FoodHero from "./FoodHero";
+
 
 // ------------------ COMIDAS ------------------
 const foodSections = [
@@ -200,9 +203,8 @@ const drinkSections = [
   },
 ];
 
-
 const Menu = () => {
-  const [activeTab, setActiveTab] = useState("comidas");
+  const [activeTab, setActiveTab] = useState("drinks");
   const location = useLocation();
 
   useEffect(() => {
@@ -212,119 +214,17 @@ const Menu = () => {
     window.scrollTo(0, 0);
   }, [location]);
 
-  const currentSections = activeTab === "comidas" ? foodSections : drinkSections;
-  const currentHeader =
-    activeTab === "comidas"
-      ? {
-          title: "Um menu pensado para você e sua experiência no Gambito",
-          subtitle: "Pratos exclusivos e deliciosos para você descobrir",
-        }
-      : {
-          title: "Drinks autorais e clássicos para uma noite única",
-          subtitle: "Coquetéis exclusivos e experiências em cada taça",
-        };
+  const currentSections = activeTab === "drinks" ?  drinkSections : foodSections;
 
   return (
-    <motion.section className="w-full h-fit scroll-auto">
-      {/* Header */}
-      <motion.div
-        className="flex flex-col w-full h-[45rem]"
-        style={{
-          backgroundImage:
-            activeTab === "comidas"
-              ? "linear-gradient(to bottom, #153831 0%, #153831 80%, black 100%)"
-              : "linear-gradient(to bottom, black 0%, red 80%, black 100%)",
-        }}
-      >
-        <Link
-          className="w-full h-fit p-8 px-10 flex items-center gap-4 opacity-30 hover:opacity-100 transition-opacity ease-in"
-          to="/"
-        >
-          <motion.img
-            className="w-6 h-6 object-cover"
-            src="/back.webp"
-            alt="Voltar"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 3 }}
-          />
-          <motion.img
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 3 }}
-            className="w-40 object-cover"
-            src="/gambito-logo.webp"
-            alt="Logo"
-          />
-        </Link>
+    <motion.section className="w-full relative">
+      {/* Header separado */}
+      {activeTab === "drinks" && <DrinksHero />}
+      {activeTab === "comidas" && <FoodHero />}
 
-        {/* Conteúdo dinâmico */}
-        <motion.div className="relative flex flex-col items-center w-full h-full mt-10">
-          {/* Bloco fixo para título + subtítulo */}
-          <div className="flex flex-col items-center justify-center h-[10rem] md:h-[12rem] text-center mb-5">
-            <motion.h1
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="px-3 max-w-2xl text-4xl md:text-5xl font-bold text-white"
-            >
-              {currentHeader.title}
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className="px-3 md:max-w-2xl text-white text-lg md:text-xl mt-2"
-            >
-              {currentHeader.subtitle}
-            </motion.p>
-          </div>
-
-          {/* Carrossel */}
-          <Carousel
-            activeTab={activeTab}
-            images={
-              activeTab === "comidas"
-                ? [
-                    "/pratomenu.webp",
-                    "/BolinhoDePinhao.webp",
-                    "/Burrata.webp",
-                    "/Coxinha.webp",
-                    "/Croquete.webp",
-                    "/Guioza.webp",
-                    "/PolentinhaMole.webp",
-                  ]
-                : [
-                    "/BQ.webp",
-                    "/taca-full.webp",
-                    "/d1.webp",
-                    "/d2.webp",
-                    "/d3.webp",
-                    "/d4.webp",
-                    "/d5.webp",
-                    "/d6.webp",
-                    "/d7.webp",
-                    "/d8.webp",
-                    "/d10.webp",
-                  ]
-            }
-          />
-        </motion.div>
-      </motion.div>
-
-      {/* Botão de seleção */}
-      <div className="flex justify-center mt-10 z-50 md:mt-40">
-        <div className="flex w-64 h-12 rounded-xl overflow-hidden border border-white/30">
-          <button
-            onClick={() => setActiveTab("comidas")}
-            className={`flex-1 flex items-center justify-center text-sm font-semibold transition-colors ${
-              activeTab === "comidas"
-                ? "bg-[#153831] text-white"
-                : "bg-neutral-800 text-gray-400"
-            }`}
-          >
-            Comidas
-          </button>
+      {/* Botões de seleção fixos */}
+      <div className="fixed bottom-6 py-2 px-3 rounded-4xl md:bottom-8 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center bg-black/10 backdrop-blur-xs">
+        <div className="flex w-56 md:w-64 h-10 md:h-12 rounded-xl overflow-hidden border border-white/30">
           <button
             onClick={() => setActiveTab("drinks")}
             className={`flex-1 flex items-center justify-center text-sm font-semibold transition-colors ${
@@ -335,10 +235,21 @@ const Menu = () => {
           >
             Bebidas
           </button>
+          <button
+            onClick={() => setActiveTab("comidas")}
+            className={`flex-1 flex items-center justify-center text-sm font-semibold transition-colors ${
+              activeTab === "comidas"
+                ? "bg-[#153831] text-white"
+                : "bg-neutral-800 text-gray-400"
+            }`}
+          >
+            Comidas
+          </button>
+          
         </div>
       </div>
 
-      {/* Lista dinâmica */}
+      {/* Lista dinâmica compartilhada */}
       <motion.div className="flex flex-col items-center w-full bg-black py-16 px-6">
         <div className="max-w-4xl w-full flex flex-col gap-16">
           {currentSections.map((section, sIndex) => (
@@ -346,11 +257,7 @@ const Menu = () => {
               key={sIndex}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: sIndex * 0.2,
-              }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: sIndex * 0.2 }}
               viewport={{ once: false, amount: 0.2 }}
               className="flex flex-col gap-6"
             >
@@ -385,16 +292,10 @@ const Menu = () => {
                     />
                     <div className="flex-1 flex flex-col">
                       <div className="flex items-center justify-between border-b border-dotted border-gray-500 pb-1">
-                        <span className="text-white text-lg font-medium">
-                          {item.name}
-                        </span>
-                        <span className="text-white font-medium">
-                          {item.price}
-                        </span>
+                        <span className="text-white text-lg font-medium">{item.name}</span>
+                        <span className="text-white font-medium">{item.price}</span>
                       </div>
-                      <p className="text-gray-400 text-sm mt-1">
-                        {item.description}
-                      </p>
+                      <p className="text-gray-400 text-sm mt-1">{item.description}</p>
                     </div>
                   </motion.div>
                 ))}
