@@ -259,6 +259,9 @@ const DrinksHero = () => {
               <motion.div
                 key={i}
                 className="flex flex-col gap-3 border-y py-2 border-neutral-800/70 px-2 rounded-2xl"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, delay: .2 }}
               >
                 <motion.div  className="w-full h-64 lg:h-128 bg-neutral-900 rounded-xl overflow-hidden">
                   {drink.image ? (
@@ -268,6 +271,7 @@ const DrinksHero = () => {
                       className="object-cover w-full h-full"
                       loading="lazy"
                       decoding="async"
+                      fetchPriority="high"
                     />
                   ) : (
                     <motion.div className="flex items-center justify-center w-full h-full text-neutral-600">
