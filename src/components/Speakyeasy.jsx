@@ -58,7 +58,7 @@ const Speakeasy = () => {
     // )
 
     return ( 
-        <motion.div style={{opacity: Opacity}} className="relative bg-contain bg-cover-center bg-[url('/FundoGambito.webp')]">
+        <motion.div style={{opacity: Opacity}} className=" lg:mt-10 relative bg-contain bg-cover-center bg-[url('/FundoGambito.webp')]">
             {/* BG */}
             <div className="absolute inset-0 bg-black/60 backdrop-opacity-95 backdrop-blur-[1px]"></div>
 
