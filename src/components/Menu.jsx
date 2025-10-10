@@ -252,10 +252,18 @@ const drinkSections = [
   },
 ];
 
+
 const Menu = () => {
   const [activeTab, setActiveTab] = useState("drinks");
+  const location = useLocation();
 
   const currentSections = activeTab === "drinks" ?  drinkSections : foodSections;
+  useEffect(() => {
+    if (location.state?.id) {
+      setActiveTab(location.state.id);
+    }
+  }, [location.state]);
+
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
