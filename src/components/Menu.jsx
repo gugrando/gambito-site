@@ -254,22 +254,18 @@ const drinkSections = [
 
 const Menu = () => {
   const [activeTab, setActiveTab] = useState("drinks");
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.state?.type) {
-      setActiveTab(location.state.type);
-    }
-    window.scrollTo(0, 0);
-  }, [location]);
 
   const currentSections = activeTab === "drinks" ?  drinkSections : foodSections;
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [activeTab]);
   return (
     <motion.section className="w-full relative">
       {/* Header separado */}
       {activeTab === "drinks" && <DrinksHero />}
       {activeTab === "comidas" && <FoodHero />}
+
 
       {/* Botões de seleção fixos */}
       <div className="fixed bottom-6 py-2 px-3 rounded-4xl md:bottom-8 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center bg-black/10 backdrop-blur-xs">

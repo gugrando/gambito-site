@@ -46,7 +46,7 @@ const DrinksHero = () => {
           author: "Ada Coleman | 1903",
           description:
             "Uma interpretação de martini com gin, vermute tinto e fernet branca, símbolo de elegância, potência e sofisticação.",
-          ingredients: "Gin | Vermute tinto | Fernet branca",
+          ingredients: "Gin Verve | Vermute rosso | Fernet branca | Bitter de laranja",
           image: "/d10.webp",
         },
       ],

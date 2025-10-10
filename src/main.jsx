@@ -17,7 +17,7 @@ function Layout() {
     <>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu" element={<Menu type="drinks" />} />
         <Route path="/links" element={<LinkTree />} />
       </Routes>
 
