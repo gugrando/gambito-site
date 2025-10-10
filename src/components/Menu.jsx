@@ -317,8 +317,8 @@ const Menu = () => {
               <h2
                 className={`text-2xl font-bold text-white border-b ${
                   activeTab === "comidas"
-                    ? "border-[#153831]/70"
-                    : "border-red-600/40"
+                    ? "border-red-600/40"
+                    : "border-[#153831]/70"
                 } pb-2`}
               >
                 {section.title}
