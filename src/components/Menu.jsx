@@ -62,62 +62,111 @@ const foodSections = [
 const drinkSections = [
   {
     title: "Clássicos e Autorais",
-    items: [
-      {
-        name: "Bee’s Knees",
-        price: "R$ 42",
-        image: "/drinks/beesknees.webp",
-        description: "Coquetel cítrico e floral criado para suavizar o gin.",
-      },
-      {
-        name: "Sweet Passion",
-        price: "R$ 45",
-        image: "/drinks/sweetpassion.webp",
-        description: "Interpretação contemporânea, criativa e adaptável.",
-      },
-      {
-        name: "Zombie",
-        price: "R$ 48",
-        image: "/drinks/zombie.webp",
-        description: "Clássico tiki de sabor intenso e complexo.",
-      },
-      {
-        name: "En Llamas",
-        price: "R$ 50",
-        image: "/drinks/enllamas.webp",
-        description: "Fusão de Mai Tai e Penicillin, defumado e doce equilibrado.",
-      },
-      {
-        name: "Paloma",
-        price: "R$ 42",
-        image: "/drinks/paloma.webp",
-        description: "Refrescante, combina tequila com grapefruit e club soda.",
-      },
-      {
-        name: "Cosmopolitan",
-        price: "R$ 44",
-        image: "/drinks/cosmopolitan.webp",
-        description: "Clássico atemporal, símbolo de sofisticação anos 90.",
-      },
-      {
-        name: "Lascívia",
-        price: "R$ 46",
-        image: "/drinks/lascivia.webp",
-        description: "Frutado e especiado, inspirado nos clássicos anos 90.",
-      },
-      {
-        name: "Penicillin Clarified",
-        price: "R$ 50",
-        image: "/drinks/penicillin.webp",
-        description: "Versão clarificada do neoclássico, suave e refinada.",
-      },
-      {
-        name: "Outros Clássicos",
-        price: "R$ 0",
-        image: "/drinks/gambito-logo-t.webp",
-        description: "Peça ao garçom para descobrir outros coquetéis icônicos.",
-      },
-    ],
+  items: [
+    {
+      name: "Bee’s Knees",
+      price: "R$ 40",
+      image: "/drinks/beesknees.webp",
+      description: "Clássico cítrico e floral criado para suavizar o gin.",
+    },
+    {
+      name: "Sweet Passion",
+      price: "R$ 42",
+      image: "/drinks/sweetpassion.webp",
+      description: "Interpretação contemporânea que expressa criatividade e adaptabilidade.",
+    },
+    {
+      name: "Zombie",
+      price: "R$ 42",
+      image: "/drinks/zombie.webp",
+      description: "Clássico tiki intenso, cheio de sabor e complexidade.",
+    },
+    {
+      name: "En Llamas",
+      price: "R$ 42",
+      image: "/drinks/enllamas.webp",
+      description: "Fusão de Mai Tai e Penicillin, defumado com doçura equilibrada.",
+    },
+    {
+      name: "Paloma",
+      price: "R$ 40",
+      image: "/drinks/paloma.webp",
+      description: "Refrescante, combina tequila com grapefruit e club soda.",
+    },
+    {
+      name: "Cosmopolitan",
+      price: "R$ 42",
+      image: "/drinks/cosmopolitan.webp",
+      description: "Clássico atemporal, símbolo de sofisticação.",
+    },
+    {
+      name: "Lascívia",
+      price: "R$ 40",
+      image: "/drinks/lascivia.webp",
+      description: "Frutado e especiado, inspirado nos clássicos dos anos 90.",
+    },
+    {
+      name: "Penicillin Clarified",
+      price: "R$ 44",
+      image: "/drinks/penicillin.webp",
+      description: "Versão clarificada do neoclássico, suave e refinada.",
+    },
+    {
+      name: "Old Fashioned",
+      price: "R$ 44",
+      image: "/drinks/oldfashioned.webp",
+      description: "Clássico encorpado e equilibrado que exalta o sabor do destilado.",
+    },
+    {
+      name: "Fancy Fashioned",
+      price: "R$ 44",
+      image: "/drinks/fancyfashioned.webp",
+      description: "Releitura com dulçor vínico e notas terrosas de cacau.",
+    },
+    {
+      name: "Hanky Panky",
+      price: "R$ 42",
+      image: "/drinks/hankypanky.webp",
+      description: "Interpretação de martini elegante com gin, vermute e fernet branca.",
+    },
+    {
+      name: "Sfumato",
+      price: "R$ 42",
+      image: "/drinks/sfumato.webp",
+      description: "Releitura floral de martini com pisco e partes iguais.",
+    },
+    {
+      name: "Boogie Sling",
+      price: "R$ 40",
+      image: "/drinks/boogiesling.webp",
+      description: "Refrescante e frutado, estilo highball tradicional.",
+    },
+    {
+      name: "Yuzu Mule",
+      price: "R$ 42",
+      image: "/drinks/yuzumule.webp",
+      description: "Moscow Mule moderno com espuma ácida e destilado brasileiro.",
+    },
+    {
+      name: "Oliva Cardinale",
+      price: "R$ 40",
+      image: "/drinks/olivacardinale.webp",
+      description: "Releitura do Negroni com toque salino e perfil seco.",
+    },
+    {
+      name: "Golden Bloom",
+      price: "R$ 42",
+      image: "/drinks/goldenbloom.webp",
+      description: "Spritz refrescante com frutas e espumante da serra.",
+    },
+    {
+      name: "Outros Clássicos",
+      price: "R$ 0",
+      image: "/drinks/gambito-logo-t.webp",
+      description: "Peça ao garçom para descobrir outros coquetéis icônicos.",
+    },
+  ],
+
   },
   {
     title: "Whisky",

@@ -229,15 +229,46 @@ const DrinksHero = () => {
         backgroundImage: "linear-gradient(to bottom, #153831 0%, #153831 80%, black 100%)",
       }}
       >
-        <motion.h1  className="text-5xl md:text-6xl font-semibold text-white mt-20">
+        <Link
+        className="w-full py-8 mt-2 h-fit flex items-center justify-center gap-4 opacity-30 hover:opacity-100 transition-opacity ease-in"
+        to="/"
+      >
+        <motion.img
+          className="w-4 h-4 object-cover"
+          src="/back.webp"
+          alt="Voltar"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 3 }}
+        />
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 3 }}
+          className="w-30 object-cover"
+          src="/gambito-logo.webp"
+          alt="Logo"
+        />
+      </Link>
+        <motion.h1 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}  className="text-5xl md:text-6xl font-semibold mt-3 text-white">
           A Carta das Eras
         </motion.h1>
-        <motion.p  className="text-neutral-100 mt-4 text-lg lg:text-2xl leading-relaxed px-2 lg:px-120">
+        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}  className="text-neutral-100 mt-4 text-lg lg:text-2xl leading-relaxed px-2 lg:px-120">
           No Gambito, cada coquetel é uma peça de história movida por mãos que
           desafiaram o tempo. Nossa carta é uma jornada pelas eras da
           coquetelaria – Inspirados no espírito dos speakeasies, recriamos não apenas 
-          receitas, mas histórias 
+          receitas, mas histórias. 
         </motion.p>
+        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }} className="flex justify-center">
+          <img
+            className="mt-40 w-11 animate-bounce flecha-a"
+            src="/flecha.webp"
+            alt=""
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2}}
+          />
+        </motion.div>
         {/* <p className="mt-8 text-neutral-400 text-lg lg:text-2xl px-8 lg:px-120">Descubra as Eras da Coquetelaria. <br /> Passado e futuro se misturam em cada taça.</p> */}
       </motion.div>
       {/* ERAS */}
@@ -248,17 +279,17 @@ const DrinksHero = () => {
         >
           {/* <img src={era.carimbo} alt="" className="absolute top-0 right-0 w-25 opacity-60 rotate-30" /> */}
           <motion.div className="flex flex-col items-center justify-center">
-            <motion.h2 whileInView={{color: "#03ad5b"}} transition={{ duration: 1, delay: .8}} className="text-3xl text-center md:text-4xl font-semibold mb-1 text-white">
+            <motion.h2 initial={{y: 30, opacity: 0}} whileInView={{color: "#03ad5b", y: 0, opacity: 1}} transition={{ duration: 2, delay: .4}} className="text-3xl text-center md:text-4xl font-semibold mb-1 text-white">
               {era.title}
             </motion.h2>
-            <motion.p className="text-center text-neutral-400 mb-10 max-w-2xl">{era.description}</motion.p>
+            <motion.p initial={{y: 30, opacity: 0}} whileInView={{ y: 0, opacity: 1}} transition={{ duration: 1, delay: .7}} className="px-4 text-center text-neutral-400 mb-10 max-w-2xl">{era.description}</motion.p>
           </motion.div>
 
           <motion.div className="flex flex-col gap-20">
             {era.drinks.map((drink, i) => (
               <motion.div
                 key={i}
-                className="flex flex-col gap-3 border-y py-2 border-neutral-800/70 px-2 rounded-2xl"
+                className="flex flex-col border-y py-4 border-neutral-800/70 px-2 rounded-2xl"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: .2 }}
@@ -279,12 +310,12 @@ const DrinksHero = () => {
                     </motion.div>
                   )}
                 </motion.div>
-                <motion.h3  className="text-xl text-red-600 mb-[-1rem]">{drink.name}</motion.h3>
+                <motion.h3  className="text-xl mt-2 text-red-600 mb-[-1rem]">{drink.name}</motion.h3>
                 {drink.author && (
-                  <motion.p  className="text-sm text-neutral-500">{drink.author}</motion.p>
+                  <motion.p  className="text-sm mt-3 text-neutral-500">{drink.author}</motion.p>
                 )}
-                <motion.p className="text-neutral-300 mt-1">{drink.description}</motion.p>
-                <motion.p className="text-neutral-400 text-sm italic">
+                <motion.p className="text-neutral-300 mt-4 md:mt-4">{drink.description}</motion.p>
+                <motion.p className="text-neutral-400 text-sm mt-2 italic">
                   {drink.ingredients}
                 </motion.p>
               </motion.div>
@@ -311,10 +342,10 @@ const DrinksHero = () => {
   transition={{ duration: 0.8 }}
   viewport={{ once: true }}
 >
-    <motion.h2 className="text-3xl md:text-4xl font-semibold mb-4">
+    <motion.h2 initial={{ opacity: 0, y: 25 }} whileInView={{ opacity: 1, y: 0, color: '#03ad5b' }} transition={{ duration: 1.2 }} className="text-white text-3xl md:text-4xl font-semibold mb-2">
         A Alquimia do Gambito
     </motion.h2>
-    <motion.p className="px-8 text-neutral-400 text-lg leading-relaxed">
+    <motion.p initial={{ opacity: 0, y: 25 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.2, delay: 0.2 }} className="px-8 text-neutral-400 text-lg leading-relaxed">
         Cada coquetel aqui é uma ponte entre épocas, uma mistura de história,
         técnica e ousadia. Do clássico ao experimental, nossa carta celebra a
         essência da coquetelaria e o espírito que move o Gambito: curiosidade,

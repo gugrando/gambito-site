@@ -11,11 +11,11 @@ const FoodHero = () => {
       }}
     >
       <Link
-        className="w-full h-fit p-8 px-10 flex items-center gap-4 opacity-30 hover:opacity-100 transition-opacity ease-in"
+        className="w-full py-8 mt-2 h-fit flex items-center justify-center gap-4 opacity-30 hover:opacity-100 transition-opacity ease-in"
         to="/"
       >
         <motion.img
-          className="w-6 h-6 object-cover"
+          className="w-4 h-4 object-cover"
           src="/back.webp"
           alt="Voltar"
           initial={{ opacity: 0 }}
@@ -26,13 +26,13 @@ const FoodHero = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 3 }}
-          className="w-40 object-cover"
+          className="w-30 object-cover"
           src="/gambito-logo.webp"
           alt="Logo"
         />
       </Link>
 
-      <motion.div className="relative flex flex-col items-center w-full h-full mt-25">
+      <motion.div className="relative flex flex-col items-center w-full h-full mt-2">
         <div className="flex flex-col items-center justify-center h-[10rem] md:h-[12rem] text-center mb-5">
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
