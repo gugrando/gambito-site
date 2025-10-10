@@ -7,7 +7,7 @@ const FoodHero = () => {
     <motion.div
       className="flex flex-col w-full h-screen"
       style={{
-        backgroundImage: "linear-gradient(to bottom, #153831 0%, #153831 80%, black 100%)",
+        backgroundImage: "linear-gradient(to bottom, #4f0b19 0%, red 80%, black 100%)",
       }}
     >
       <Link

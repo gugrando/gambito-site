@@ -272,20 +272,20 @@ const Menu = () => {
         <div className="flex w-56 md:w-64 h-10 md:h-12 rounded-xl overflow-hidden border border-white/30">
           <button
             onClick={() => setActiveTab("drinks")}
-            className={`flex-1 flex items-center justify-center text-sm font-semibold transition-colors ${
+            className={`flex-1  hover:cursor-pointer flex items-center justify-center text-sm font-semibold transition-colors ${
               activeTab === "drinks"
-                ? "bg-red-600 text-white"
-                : "bg-neutral-800 text-gray-400"
+                ? "bg-[#153831] text-white"
+                : "bg-neutral-800 hover:bg-neutral-700 transition-all duration-300 text-gray-400"
             }`}
           >
             Bebidas
           </button>
           <button
             onClick={() => setActiveTab("comidas")}
-            className={`flex-1 flex items-center justify-center text-sm font-semibold transition-colors ${
+            className={`flex-1 flex items-center justify-center text-sm font-semibold transition-colors hover:cursor-pointer ${
               activeTab === "comidas"
-                ? "bg-[#153831] text-white"
-                : "bg-neutral-800 text-gray-400"
+                ? "bg-red-600 text-white"
+                : "bg-neutral-800 hover:bg-neutral-700 transition-all duration-300 text-gray-400"
             }`}
           >
             Comidas
