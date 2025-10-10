@@ -253,7 +253,7 @@ const DrinksHero = () => {
         <motion.h1 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}  className="text-5xl md:text-6xl font-semibold mt-3 text-white">
           A Carta das Eras
         </motion.h1>
-        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}  className="text-neutral-100 mt-4 text-lg lg:text-2xl leading-relaxed px-2 lg:px-120">
+        <motion.p initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}  className="text-neutral-100 mt-4 text-lg lg:text-2xl leading-relaxed px-2 lg:px-90">
           No Gambito, cada coquetel é uma peça de história movida por mãos que
           desafiaram o tempo. Nossa carta é uma jornada pelas eras da
           coquetelaria – Inspirados no espírito dos speakeasies, recriamos não apenas 
