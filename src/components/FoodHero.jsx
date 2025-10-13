@@ -11,8 +11,8 @@ const dishes = [
   {
     name: "Burrata Defumada",
     image: "/Burrata.webp",
-    description: "Burrata cremosa com toque defumado, servida com tomates confitados e pesto da casa.",
-    ingredients: "Burrata, tomates, manjericão, azeite e redução balsâmica."
+    description: "Burrata cremosa com toque defumado, servida com tomates confitados e pesto em um pão de fermentação natural.",
+    ingredients: "Creme de Burrata e tomates confitados com molho pesto e pão de fermentação natural."
   },
   {
     name: "Coxinha de Costela",

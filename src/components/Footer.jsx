@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 const Footer = () => {
     return (
-  <motion.section className="relative h-fit flex flex-col items-center bg-black">
+  <motion.section className="relative h-fit flex flex-col items-center bg-black mt-10">
     {/* Conteúdo do footer */}
     <motion.footer className="flex flex-col items-center relative z-50 w-full h-full lg:mb-1 bg-black">
         <motion.h1 initial={{ opacity: 0, y: 50 }}
