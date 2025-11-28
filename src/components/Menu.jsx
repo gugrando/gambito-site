@@ -37,7 +37,6 @@ const foodSections = [
       { name: "Filé Mignon à Milanesa", price: "R$ 48", image: "/menu/filemilanesa.webp", description: "Carne nobre empanada, crocante e suculenta." },
       { name: "Steak Tartar", price: "R$ 59", image: "/menu/tartar.webp", description: "Clássico francês de carne crua temperada." },
       { name: "Croquetes", price: "R$ 56", image: "/menu/croquete.webp", description: "Deliciosos croquetes artesanais da casa." },
-      { name: "Coxinhas", price: "R$ 44", image: "/menu/coxinha.webp", description: "O quitute mais amado do Brasil, crocante e macio." },
     ],
   },
   {

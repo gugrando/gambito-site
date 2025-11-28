@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const dishes = [
   {
-    name: "Bolinho de Pinhão",
-    image: "/BolinhoDePinhao.webp",
-    description: "Massa artesanal com pinhão e temperos da serra, crocante por fora e macio por dentro.",
-    ingredients: "Pinhão, queijo colonial, farinha artesanal e ervas frescas."
+    name: "Pizza de Copa e Figo",
+    image: "/copaefigo.jpeg",
+    description: "Uma harmonização sofisticada: o contraste perfeito entre o salgado intenso da copa lombo e a doçura delicada do figo fresco.",
+    ingredients: "Massa de longa fermentação, molho de tomate pelati, mozzarella, copa lombo curada e figos selecionados."
   },
   {
     name: "Burrata Defumada",
@@ -15,28 +15,22 @@ const dishes = [
     ingredients: "Creme de Burrata e tomates confitados com molho pesto e pão de fermentação natural."
   },
   {
-    name: "Coxinha de Costela",
-    image: "/Coxinha.webp",
-    description: "Releitura da clássica coxinha, com recheio suculento de costela bovina desfiada.",
-    ingredients: "Costela bovina, massa de batata, farinha panko e especiarias."
+    name: "Pizza de Pepperoni",
+    image: "/pepperoni.jpeg",
+    description: "O clássico executado com maestria. Fatias generosas de pepperoni crocante sobre queijo gratinado e nossa massa leve e aerada.",
+    ingredients: "Massa de longa fermentação, molho de tomate rústico, mozzarella e pepperoni com leve toque picante."
   },
   {
-    name: "Croquete Alemão",
+    name: "Bolinho de Bacalhau",
     image: "/Croquete.webp",
-    description: "Inspirado na culinária germânica, com toque rústico e sabor intenso.",
-    ingredients: "Carne moída, mostarda escura, cebola caramelizada e cerveja preta."
+    description: "A autêntica tradição portuguesa, crocante e dourado por fora, com interior cremoso e lascas nobres de bacalhau.",
+    ingredients: "Bacalhau dessalgado, batata selecionada, azeite de oliva extra virgem, alho e salsinha fresca."
   },
   {
     name: "Guioza do Gambito",
     image: "/Guioza.webp",
     description: "Guiozas artesanais seladas na chapa, com molho oriental agridoce.",
     ingredients: "Carne suína, gengibre, shoyu e cebolinha."
-  },
-  {
-    name: "Polentinha Mole com Ragu",
-    image: "/PolentinhaMole.webp",
-    description: "Polenta cremosa servida com ragu de ossobuco, finalizada com queijo colonial.",
-    ingredients: "Milho, ossobuco, parmesão e ervas frescas."
   },
 ];
 
