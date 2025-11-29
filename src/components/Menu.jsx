@@ -11,7 +11,6 @@ const foodSections = [
   {
     title: "Quitutes",
     items: [
-      { name: "Bolinho de Bacalhau", price: "R$ 56", image: "/menu/bolinho.webp", description: "Clássico português, crocante por fora e macio por dentro." },
       { name: "Agnolini", price: "R$ 49", image: "/menu/agnolini.webp", description: "Massa artesanal recheada, saborosa e delicada." },
       { name: "Guiozas", price: "R$ 49", image: "/menu/guioza.webp", description: "Pastéis orientais recheados e selados na chapa." },
       { name: "Dadinho de Tapioca", price: "R$ 49", image: "/menu/dadinho.webp", description: "Croquetes de tapioca com queijo, crocantes e leves." },

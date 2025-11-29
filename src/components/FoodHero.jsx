@@ -6,7 +6,7 @@ const dishes = [
     name: "Pizza de Copa e Figo",
     image: "/copaefigo.jpeg",
     description: "Uma harmonização sofisticada: o contraste perfeito entre o salgado intenso da copa lombo e a doçura delicada do figo fresco.",
-    ingredients: "Massa de longa fermentação, molho de tomate pelati, mozzarella, copa lombo curada e figos selecionados."
+    ingredients: "Copa e figos selecionados."
   },
   {
     name: "Burrata Defumada",
@@ -21,10 +21,10 @@ const dishes = [
     ingredients: "Massa de longa fermentação, molho de tomate rústico, mozzarella e pepperoni com leve toque picante."
   },
   {
-    name: "Bolinho de Bacalhau",
+    name: "Croquete",
     image: "/Croquete.webp",
-    description: "A autêntica tradição portuguesa, crocante e dourado por fora, com interior cremoso e lascas nobres de bacalhau.",
-    ingredients: "Bacalhau dessalgado, batata selecionada, azeite de oliva extra virgem, alho e salsinha fresca."
+    description: "Crocante e dourado por fora, sabor intenso por dentro.",
+    ingredients: "12 Unidades de croquete de carne, acompanhado de molhos."
   },
   {
     name: "Guioza do Gambito",
