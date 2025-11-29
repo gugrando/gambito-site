@@ -9,9 +9,9 @@ const dishes = [
     ingredients: "Copa e figos selecionados."
   },
   {
-    name: "Burrata Defumada",
+    name: "Burrata",
     image: "/Burrata.webp",
-    description: "Burrata cremosa com toque defumado, servida com tomates confitados e pesto em um pão de fermentação natural.",
+    description: "Burrata cremosa, servida com tomates confitados e pesto em um pão de fermentação natural.",
     ingredients: "Creme de Burrata e tomates confitados com molho pesto e pão de fermentação natural."
   },
   {
@@ -22,7 +22,7 @@ const dishes = [
   },
   {
     name: "Croquete",
-    image: "/Croquete.webp",
+    image: "/croquete.jpeg",
     description: "Crocante e dourado por fora, sabor intenso por dentro.",
     ingredients: "12 Unidades de croquete de carne, acompanhado de molhos."
   },
